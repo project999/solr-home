@@ -110,24 +110,17 @@
      tokens
    -->   
    
-   <!--
-   
 	<field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
--->
 
-	<field name="docId" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
-	
-	<field name="docName" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
-	<field name="docPath" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
-	<field name="docType" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
-	<field name="docContent" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
-	<field name="name" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
-	<field name="owner" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
-	<!--
-	<field name="recommandCount" type="int" indexed="true" stored="true" required="false" multiValued="false" /> 
-	<field name="downloadCount" type="int" indexed="true" stored="true" required="false" multiValued="false" /> 
-	-->
-	<field name="uploadDate" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
+<field name="docName" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
+<field name="docPath" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
+<field name="docType" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
+<field name="docContent" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
+<field name="name" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
+<field name="ownerid" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
+<field name="commentCount" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
+<field name="downloadCount" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
+<field name="uploadDate" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
 
 
    <!-- Dynamic field definitions allow using convention over configuration
@@ -146,7 +139,7 @@
  <!-- Field to use to determine and enforce document uniqueness. 
       Unless this field is marked with required="false", it will be a required field
    -->
- <uniqueKey>docId</uniqueKey>
+ <uniqueKey>id</uniqueKey>
 
   <!-- copyField commands copy one field to another at the time a document
         is added to the index.  It's used either to index the same field differently,
