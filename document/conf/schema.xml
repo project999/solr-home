@@ -118,8 +118,6 @@
 <field name="docContent" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
 <field name="name" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
 <field name="ownerid" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
-<field name="commentCount" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
-<field name="downloadCount" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
 <field name="uploadDate" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
 
 
