@@ -436,6 +436,13 @@
        <str name="echoParams">explicit</str>
        <int name="rows">10</int>
      </lst>
+	 
+    <arr name="components">
+      <str>query</str>
+      <str>facet</str>
+      <str>comment</str>
+    </arr>
+
 
     </requestHandler>
 
@@ -563,6 +570,7 @@
        terms
     -->
   <searchComponent name="terms" class="solr.TermsComponent"/>
+  <searchComponent name="comment" class="pluto.ods.handler.CommentComponent"/>
 
   <!-- A request handler for demonstrating the terms component -->
   <requestHandler name="/terms" class="solr.SearchHandler" startup="lazy">
