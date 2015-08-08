@@ -111,6 +111,7 @@
    -->   
    
 	<field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
+	<field name="userId" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
 	<field name="date" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
 	<field name="content" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
 	<field name="docId" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
